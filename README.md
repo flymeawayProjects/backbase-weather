@@ -18,9 +18,25 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Solution description
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Project created to show modularity architecture with Facade layer. 
+This problem might be too easy to show the full power of Facade pattern but the general
+purpose is to separate app logic from UI. 
+
+Observables handled in HTML files with Async Pipe helps to show the pros of this solution in simple cases like this.
+
+To save the time for creating boilerplate code - ng-mocks package is uded to mock dependencies in tests.
+unit tests in components show the overall approach to testing and test coverage of the most important things.
+
+Due to the limited amount of time, not all components have been tested.
+
+Some of the components could be moved to Shared module to be more reusable in the bigger application. 
+Due to the limited functionality of the application, it was decided to create components in the application within the Weather module.
+
+Error handling was not included. But should be created to handle bad requests.
+
+UI was created to be as simple as possible. Bootstrap Library was used to achieve this.
 
 ## Further help
 
