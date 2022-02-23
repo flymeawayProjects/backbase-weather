@@ -1,0 +1,19 @@
+.list-group-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        p {
+            margin-bottom: 0;
+            width: 33%;
+            text-align: center;
+        }
+    }
+}

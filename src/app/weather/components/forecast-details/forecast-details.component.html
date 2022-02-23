@@ -1,0 +1,4 @@
+<h5>{{cityName}}</h5>
+<ul class="list-group list-group-flush" *ngIf="(forecastData$ | async) as data">
+    <app-forecast-details-item *ngFor="let forecast of data" [forecastDetails]="forecast"></app-forecast-details-item>
+</ul>

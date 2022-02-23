@@ -1,0 +1,12 @@
+<div class="card text-center">
+    <app-weather-icon [icon]="weatherData.icon"></app-weather-icon>
+    <div class="card-body">
+        <h5 class="card-title">{{weatherData.cityName}}</h5>
+        <p class="card-text">Temperature: {{weatherData.temperature | measureUnit:'celcius'}}</p>
+        <p class="card-text">Wind strength: {{weatherData.windStrength | measureUnit:'kph'}}</p>
+    </div>
+    <div class="card-footer text-muted">
+        <a type="button" [routerLink]="['/weather/details']" [queryParams]="{cityName: weatherData.cityName}"
+            class="btn btn-outline-dark">Check forecast</a>
+    </div>
+</div>

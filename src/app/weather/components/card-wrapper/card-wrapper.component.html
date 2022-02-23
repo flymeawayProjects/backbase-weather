@@ -1,0 +1,5 @@
+<div class="row">
+    <div class="col-bg-3 col-md-3 col-sm-4" *ngFor="let weather$ of weathers$">
+        <app-weather-card *ngIf="(weather$ | async) as data" [weatherData]="data"></app-weather-card>
+    </div>
+</div>

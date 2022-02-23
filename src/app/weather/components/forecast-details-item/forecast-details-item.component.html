@@ -1,0 +1,8 @@
+<li class="list-group-item">
+    <app-weather-icon [fullWidth]="true" [icon]="forecastDetails.icon"></app-weather-icon>
+    <div>
+        <p>{{ forecastDetails.date | date:'shortTime' }}</p>
+        <p>{{ forecastDetails.temperature | measureUnit:'celcius' }}</p>
+        <p>{{ forecastDetails.windStrength | measureUnit:'kph' }}</p>
+    </div>
+</li>
